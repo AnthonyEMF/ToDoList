@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"> <!-- Enlace al archivo CSS -->
+    <link rel="icon" type="favicon" href="/img/favicon.png"> <!-- Icono de la pestaña -->
+    <title>To Do List</title>
+</head>
+<body>
+    <!-- Contenido -->
+    <div id="app">
+        <h1>Lista de tareas</h1>
+        <p>Aplicacion web de lista de tareas para agregar nuevas tareas, 
+        marcarlas como completadas, eliminarlas y guardarlas utilizando LocalStorage.</p>
+        <input type="text" id="nuevaTarea" placeholder="Ingresar nueva tarea...">
+        <button onclick="agregarTarea()">Añadir</button>
+        <div id="listaTareas"><!-- Contenido generado mediante JavaScript --></div>
+        <h4>Desarrollado por <a href="https://github.com/AnthonyEMF" target="_blank">@AnthonyEMF</a></h4>
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
