@@ -22,6 +22,9 @@ function agregarTarea(){
         tareaInput.value = '';
         imprimirTareas();
         guardarTareas();
+    }else{
+        // Alerta que se envia si no se ingreso ninguna tarea en el Input
+        alert('Porfavor, ingrese una tarea.');
     }
 }
 
@@ -41,6 +44,14 @@ function marcarTarea(id){
 function eliminarTarea(id){
     // Excluye la tarea con el ID coincidente
     tareas = tareas.filter((tarea) => tarea.id !== id);
+    imprimirTareas();
+    guardarTareas();
+}
+
+// Eliminar todas las tareas de la lista
+function eliminarTodo(){
+    // Reemplaza los elementos existentes eliminandolos
+    tareas.splice(0, tareas.length);
     imprimirTareas();
     guardarTareas();
 }

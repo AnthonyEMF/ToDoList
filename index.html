@@ -8,14 +8,17 @@
     <title>To Do List</title>
 </head>
 <body>
-    <!-- Contenido -->
+    <!-- Contenedor principal -->
     <div id="app">
         <h1>Lista de tareas</h1>
         <p>Aplicacion web de lista de tareas para agregar nuevas tareas, 
         marcarlas como completadas, eliminarlas y guardarlas utilizando LocalStorage.</p>
-        <input type="text" id="nuevaTarea" placeholder="Ingresar nueva tarea...">
-        <button onclick="agregarTarea()">Añadir</button>
-        <div id="listaTareas"><!-- Contenido generado mediante JavaScript --></div>
+        <input type="text" id="nuevaTarea" placeholder="Ingresar nueva tarea..." autocomplete="off">
+        <div class="containerBtn"> <!-- Contenedor de los botones -->
+            <button onclick="agregarTarea()" id="btnAgregar">Añadir</button>
+            <button onclick="eliminarTodo()" id="btnEliminarTodo">Limpiar todo</button>
+        </div>
+        <div id="listaTareas"><!-- Contenedor donde se generara la lista mediante JavaScript --></div>
         <h4>Desarrollado por <a href="https://github.com/AnthonyEMF" target="_blank">@AnthonyEMF</a></h4>
     </div>
     <!-- Enlace al archivo JavaScript -->

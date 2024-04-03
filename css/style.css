@@ -37,7 +37,7 @@ a:hover{
 }
 
 /* Input de tareas*/
-input, button{
+input{
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -46,21 +46,38 @@ input, button{
 
 /* Botones */
 button{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
     cursor: pointer;
     background-color: #007bff;
     color: white;
     border: none;
 }
 
+.containerBtn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btnAgregar{
+    margin: 5px 2.5px 5px 0;
+}
+
+#btnEliminarTodo{
+    margin: 5px 0 5px 2.5px;
+}
+
 button:hover{
     background-color: #0056b3;
 }
 
-#btnEliminar{
+#btnEliminar, #btnEliminarTodo{
     background-color: #ec3d3d;
 }
 
-#btnEliminar:hover{
+#btnEliminar:hover, #btnEliminarTodo:hover{
     background-color: #b83535;
 }
 
